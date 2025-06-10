@@ -139,7 +139,7 @@ const OfferCard = ({ sportsbook, onViewDetails }) => (
   </div>
 );
 
-// Detailed offer modal
+// Fixed Detailed offer modal component
 const OfferModal = ({ sportsbook, onClose }) => (
   <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
     <div className="bg-gray-800 rounded-2xl p-6 max-w-md w-full max-h-96 overflow-y-auto border border-gray-700">
@@ -195,8 +195,8 @@ const OfferModal = ({ sportsbook, onClose }) => (
         </div>
       </div>
       
-      {/* Sign up button */}
-      
+      {/* Sign up button - FIXED: Added missing <a> tag */}
+      <a
         href={sportsbook.affiliate_link}
         target="_blank"
         rel="noopener noreferrer"
