@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   try {
     const { data, error } = await supabase
       .from('sportsbooks')
-      .select('*')
+      .select('*, insider_rating')
       .contains('state_availability', [state])
       .eq('is_active', true);
     
